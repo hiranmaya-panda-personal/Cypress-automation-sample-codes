@@ -1,3 +1,5 @@
 {
-    "baseUrl": "https://app.staffbase.com"
+    "baseUrl": "https://app.staffbase.com",
+    "viewportWidth": 1300,
+    "viewportHeight": 660
 }
