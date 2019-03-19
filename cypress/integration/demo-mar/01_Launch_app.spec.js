@@ -1,3 +1,4 @@
+// Basic UI check sample code
 /// <reference types="Cypress" />
 
 describe('Checking launch of website',function(){
