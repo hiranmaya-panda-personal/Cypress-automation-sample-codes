@@ -58,7 +58,12 @@ describe('Testing the Search functionality',function(){
             let headerFullText = $header.text()
             let headerFirstWord = headerFullText.replace(/ .*/,' ')
             let headerNumberOfResults = parseInt(headerFirstWord,10)
+            
+            //Check for the header for search results - h1
             expect(headerFullText).to.eql(headerNumberOfResults+' Search results found for: '+this.searchParameter.validQuery)
+            
+            //Checking the search results' header - h2
+            cy.get('.section-headline').contains('Results on Staffbase.com')
         })
     });
 })
