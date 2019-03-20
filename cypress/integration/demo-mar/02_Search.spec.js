@@ -32,6 +32,18 @@ describe('Testing the Search functionality',function(){
         .type('{enter}')
     });
 
+    it('URL after search execution is correctly reflected',function(){
+        cy.get('.item-1 > .flex-nav__group > .flex-nav__group-item > .flex-nav__link')
+        .click()
+
+        cy.get('.search-form-container > .search-form > #search')
+        .type(this.searchParameter.validQuery)
+        .type('{enter}')
+
+        cy.url().should('include', '?s='+this.searchParameter.validQuery)
+    });
+
+
     it('User is shown a message if no results are available',function(){
         cy.get('.item-1 > .flex-nav__group > .flex-nav__group-item > .flex-nav__link')
         .click()
@@ -66,4 +78,16 @@ describe('Testing the Search functionality',function(){
             cy.get('.section-headline').contains('Results on Staffbase.com')
         })
     });
+
+    it('User can see at least one search result after a valid search query', function(){
+        cy.get('.item-1 > .flex-nav__group > .flex-nav__group-item > .flex-nav__link')
+        .click()
+        
+        cy.get('.search-form-container > .search-form > #search')
+        .should('be.visible')
+        .type(this.searchParameter.validQuery)
+        .type('{enter}')
+        
+        cy.get('.search-results-wrapper > :nth-child(2)').should('exist')
+    })
 })
