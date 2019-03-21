@@ -30,6 +30,6 @@
 ###### How to run the tests?
 1. Install pre-requisite tools as mentioned above.
 2. Download the repository.
-3. Launch terminal in the 'demo-mar' folder.
+3. Launch terminal in the '...cypress/demo-mar' folder.
 4. Open the Cypress runner by executing 'npx cypress open' in the Terminal window and select any test run(...spec.js) file to running the corresponding tests.
 5. For headless execution, after step(3), execute 'npx cypress run' in the Terminal.
