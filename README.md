@@ -11,7 +11,7 @@
   * API calls & Response body validation
     * ⁨cypress⁩ ▸ ⁨integration⁩ ▸ ⁨demo-mar⁩ ▸ 02_Search.spec.js
 
-###### Other important/depdent files:
+###### Other important/dependent files:
   * Fixture files:
     * ⁨cypress⁩ ▸ ⁨integration⁩ ▸ fixtures ▸ 02_search.json
     * ⁨cypress⁩ ▸ ⁨integration⁩ ▸ fixtures ▸ 04_getDemo.json
