@@ -4,11 +4,11 @@
 describe('Checking launch of website',function(){
 
     beforeEach(function() {
-        cy.visit('/')
+        cy.visit('https://app.staffbase.com')
       });
 
     it('requests a response from baseURL',function(){
-        cy.request('/').then((response) => {
+        cy.request('https://app.staffbase.com').then((response) => {
             expect(response.status).to.eq(200)
         })
     });
