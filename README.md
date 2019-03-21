@@ -1,4 +1,5 @@
-<h2> Cypress.io sample codes </h2>
+## Cypress.io sample codes
+
 ###### Following areas are covered:
   * Web UI - (desktop & mobile)
     * ⁨cypress⁩ ▸ ⁨integration⁩ ▸ ⁨demo-mar⁩ ▸ ⁨01_Launch_website.spec.js
