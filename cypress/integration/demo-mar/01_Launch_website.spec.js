@@ -24,7 +24,7 @@ describe('Checking launch of website',function(){
 
 describe('Associated UI elements are present',function(){
     beforeEach(function(){
-        cy.visit('/')
+        cy.visit('https://app.staffbase.com')
     });
     
     it('Page content is present',function(){
