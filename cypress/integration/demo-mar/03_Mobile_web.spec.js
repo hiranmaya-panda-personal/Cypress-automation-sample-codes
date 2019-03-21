@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 describe('User can see menu-hamburger menu with a 320x568 viewport', function() {
     beforeEach(function() {
       cy.viewport(320, 568)
